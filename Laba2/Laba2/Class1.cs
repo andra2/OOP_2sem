@@ -43,8 +43,10 @@ namespace Laba2
             Console.WriteLine("координаты обьекта на земле\nX: {0}\nY: {1}\n", x, y);
         }
     }
-    class Ship
+    class Ship:IComponent
     {
+        public string Name { get; set; }
+
         private int x = 0, y = 0;
         public void MoveX(int range)
         {
