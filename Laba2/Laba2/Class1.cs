@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Laba2
 {
@@ -10,7 +8,7 @@ namespace Laba2
         public void MoveY(int range);
         public void Show();
     }
-    class Swordsman
+    class Swordsman: Unit
     {
         public void MoveX(IMoveable moveable, int i)
         {
@@ -24,10 +22,20 @@ namespace Laba2
         {
             moveable.Show();
         }
+        public Swordsman(string name) : base(name) { }
     }
-    class Unit : IMoveable
+    abstract class Unit : IMoveable, IComponent
     {
+        public string Title { get; set; }
         private int x = 0, y = 0;
+        public virtual void Draw()
+        {
+            Console.WriteLine(Title);
+        }
+        public IComponent Find(string title)
+        {
+            return Title == title ? this : null;
+        }
         public void MoveX(int range)
         {
             Console.WriteLine("иду");
@@ -42,10 +50,14 @@ namespace Laba2
         {
             Console.WriteLine("координаты обьекта на земле\nX: {0}\nY: {1}\n", x, y);
         }
+        public Unit(string name)
+        {
+            Title = name;
+        }
     }
     class Ship:IComponent
     {
-        public string Name { get; set; }
+        public string Title { get; set; }
 
         private int x = 0, y = 0;
         public void MoveX(int range)
@@ -58,9 +70,13 @@ namespace Laba2
             Console.WriteLine("плыву");
             y += range;
         }
-        public void Show()
+        public void Draw()
         {
             Console.WriteLine("координаты обьекта на воде\nX: {0}\nY: {1}\n", x, y);
+        }
+        public IComponent Find(string title)
+        {
+            return Title == title ? this : null;
         }
     }
     class ShipToUnitAdapter : IMoveable
@@ -80,7 +96,7 @@ namespace Laba2
         }
         public void Show()
         {
-            ship.Show();
+            ship.Draw();
         }
     }
 
