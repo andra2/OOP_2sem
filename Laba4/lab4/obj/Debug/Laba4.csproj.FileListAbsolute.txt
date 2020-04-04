@@ -1,0 +1,10 @@
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba4\lab4\bin\Debug\lab4.exe.config
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba4\lab4\bin\Debug\lab4.exe
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba4\lab4\bin\Debug\lab4.pdb
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba4\lab4\obj\Debug\Laba4.csprojAssemblyReference.cache
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba4\lab4\obj\Debug\lab4.Properties.Resources.resources
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba4\lab4\obj\Debug\Laba4.csproj.GenerateResource.cache
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba4\lab4\obj\Debug\Laba4.csproj.CoreCompileInputs.cache
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba4\lab4\obj\Debug\lab4.exe
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba4\lab4\obj\Debug\lab4.pdb
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba4\lab4\obj\Debug\lab4.Калькулятор.resources

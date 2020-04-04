@@ -1,0 +1,37 @@
+D:\Универ\Лабы\ООП\2 сем\lab4\lab4\bin\Debug\lab4.exe.config
+D:\Универ\Лабы\ООП\2 сем\lab4\lab4\bin\Debug\lab4.exe
+D:\Универ\Лабы\ООП\2 сем\lab4\lab4\bin\Debug\lab4.pdb
+D:\Универ\Лабы\ООП\2 сем\lab4\lab4\obj\Debug\lab4.csprojAssemblyReference.cache
+D:\Универ\Лабы\ООП\2 сем\lab4\lab4\obj\Debug\lab4.Form1.resources
+D:\Универ\Лабы\ООП\2 сем\lab4\lab4\obj\Debug\lab4.Properties.Resources.resources
+D:\Универ\Лабы\ООП\2 сем\lab4\lab4\obj\Debug\lab4.csproj.GenerateResource.cache
+D:\Универ\Лабы\ООП\2 сем\lab4\lab4\obj\Debug\lab4.exe
+D:\Универ\Лабы\ООП\2 сем\lab4\lab4\obj\Debug\lab4.pdb
+d:\Универ\Лабы\ООП\2 сем\lab4 calculator\lab4\bin\Debug\lab4.exe.config
+d:\Универ\Лабы\ООП\2 сем\lab4 calculator\lab4\bin\Debug\lab4.exe
+d:\Универ\Лабы\ООП\2 сем\lab4 calculator\lab4\bin\Debug\lab4.pdb
+d:\Универ\Лабы\ООП\2 сем\lab4 calculator\lab4\obj\Debug\lab4.csprojAssemblyReference.cache
+d:\Универ\Лабы\ООП\2 сем\lab4 calculator\lab4\obj\Debug\lab4.Form1.resources
+d:\Универ\Лабы\ООП\2 сем\lab4 calculator\lab4\obj\Debug\lab4.Properties.Resources.resources
+d:\Универ\Лабы\ООП\2 сем\lab4 calculator\lab4\obj\Debug\lab4.csproj.GenerateResource.cache
+d:\Универ\Лабы\ООП\2 сем\lab4 calculator\lab4\obj\Debug\lab4.exe
+d:\Универ\Лабы\ООП\2 сем\lab4 calculator\lab4\obj\Debug\lab4.pdb
+C:\Users\Sebastian\Desktop\lab4 calculator\lab4\bin\Debug\lab4.exe.config
+C:\Users\Sebastian\Desktop\lab4 calculator\lab4\bin\Debug\lab4.exe
+C:\Users\Sebastian\Desktop\lab4 calculator\lab4\bin\Debug\lab4.pdb
+C:\Users\Sebastian\Desktop\lab4 calculator\lab4\obj\Debug\lab4.csprojAssemblyReference.cache
+C:\Users\Sebastian\Desktop\lab4 calculator\lab4\obj\Debug\lab4.Form1.resources
+C:\Users\Sebastian\Desktop\lab4 calculator\lab4\obj\Debug\lab4.Properties.Resources.resources
+C:\Users\Sebastian\Desktop\lab4 calculator\lab4\obj\Debug\lab4.csproj.GenerateResource.cache
+C:\Users\Sebastian\Desktop\lab4 calculator\lab4\obj\Debug\lab4.exe
+C:\Users\Sebastian\Desktop\lab4 calculator\lab4\obj\Debug\lab4.pdb
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\lab4 calculator\lab4\bin\Debug\lab4.exe.config
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\lab4 calculator\lab4\bin\Debug\lab4.exe
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\lab4 calculator\lab4\bin\Debug\lab4.pdb
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\lab4 calculator\lab4\obj\Debug\lab4.csprojAssemblyReference.cache
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\lab4 calculator\lab4\obj\Debug\lab4.Form1.resources
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\lab4 calculator\lab4\obj\Debug\lab4.Properties.Resources.resources
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\lab4 calculator\lab4\obj\Debug\lab4.csproj.GenerateResource.cache
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\lab4 calculator\lab4\obj\Debug\lab4.csproj.CoreCompileInputs.cache
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\lab4 calculator\lab4\obj\Debug\lab4.exe
+D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\lab4 calculator\lab4\obj\Debug\lab4.pdb
