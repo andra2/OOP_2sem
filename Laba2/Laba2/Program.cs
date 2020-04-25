@@ -21,6 +21,7 @@ namespace Laba2
             map.AddComponent(unit);
             map.AddComponent(new Swordsman("генрих"));
             map.Find("артур").Draw();
+            map.Find("артур").AddComponent(man);
 
             map.AddComponent(new CoolerMinion("арторий"));
             map.Find("арторий").Draw();

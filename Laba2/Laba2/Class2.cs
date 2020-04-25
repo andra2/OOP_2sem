@@ -9,18 +9,7 @@ namespace Laba2
         string Title { get; set; }
         void Draw();
         IComponent Find(string title);
-    }
-    public class MapComponent : IComponent
-    {
-        public string Title { get; set; }
-        public void Draw()
-        {
-            Console.WriteLine(Title);
-        }
-        public IComponent Find(string title)
-        {
-            return Title == title ? this : null;
-        }
+        public void AddComponent(IComponent component);
     }
 
     public class Map : IComponent

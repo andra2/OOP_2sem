@@ -11,14 +11,19 @@ namespace Laba1
             Kazarma kazarma = new Kazarma();
 
             commander.Construct(3,range);
-            commander.Construct(8, kazarma, range);
+            commander.Construct(4, kazarma, range);
+            commander.ShowArmy();
+
+            Minion karl = new Minion(kazarma);
+            commander.army.AddLast(karl);
+            commander.army.AddLast(karl.Clone());
             commander.ShowArmy();
         }
     }
 
     class Commander
     {
-        public List<Minion> army = new List<Minion>();
+        public LinkedList<Minion> army = new LinkedList<Minion>();
         private static Commander instance;
         public static Commander GetInstance()
         {
@@ -36,14 +41,15 @@ namespace Laba1
         {
             for (int i = 0; i < amount; i++)
             {
-                army.Add(new Minion(factory));
+                army.AddLast(new Minion(factory));
             }
+
         }
         public void Construct(int amount, AbstractFactory bodyFactory, AbstractFactory weaponFactory)
         {
             for (int i = 0; i < amount; i++)
             {
-                army.Add(new Minion(bodyFactory, weaponFactory));
+                army.AddLast(new Minion(bodyFactory, weaponFactory));
             }
         }
         public void ShowArmy()
@@ -53,7 +59,7 @@ namespace Laba1
             {
                 Console.WriteLine(m.body.ToString() + " " + m.weapon.ToString());
             }
-            Console.WriteLine("Количество войнов = {0}", army.Count);
+            Console.WriteLine("Количество войнов = {0}\n", army.Count);
         }
     }
     class Sword : AbsWeapon

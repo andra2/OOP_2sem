@@ -1,0 +1,13 @@
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba3\lab3\bin\Debug\netcoreapp3.1\Laba3.exe
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba3\lab3\bin\Debug\netcoreapp3.1\Laba3.deps.json
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba3\lab3\bin\Debug\netcoreapp3.1\Laba3.runtimeconfig.json
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba3\lab3\bin\Debug\netcoreapp3.1\Laba3.runtimeconfig.dev.json
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba3\lab3\bin\Debug\netcoreapp3.1\Laba3.dll
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba3\lab3\bin\Debug\netcoreapp3.1\Laba3.pdb
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba3\lab3\obj\Debug\netcoreapp3.1\Laba3.csprojAssemblyReference.cache
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba3\lab3\obj\Debug\netcoreapp3.1\Laba3.csproj.CoreCompileInputs.cache
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba3\lab3\obj\Debug\netcoreapp3.1\Laba3.AssemblyInfoInputs.cache
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba3\lab3\obj\Debug\netcoreapp3.1\Laba3.AssemblyInfo.cs
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba3\lab3\obj\Debug\netcoreapp3.1\Laba3.dll
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba3\lab3\obj\Debug\netcoreapp3.1\Laba3.pdb
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba3\lab3\obj\Debug\netcoreapp3.1\Laba3.genruntimeconfig.cache

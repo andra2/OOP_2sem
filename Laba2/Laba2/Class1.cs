@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Laba2
 {
@@ -8,7 +9,7 @@ namespace Laba2
         public void MoveY(int range);
         public void Show();
     }
-    class Swordsman: Unit
+    class Swordsman: Unit, IComponent
     {
         public void MoveX(IMoveable moveable, int i)
         {
@@ -26,6 +27,11 @@ namespace Laba2
     }
     abstract class Unit : IMoveable, IComponent
     {
+        private readonly List<IComponent> _map = new List<IComponent>();
+        public void AddComponent(IComponent component)
+        {
+            _map.Add(component);
+        }
         public string Title { get; set; }
         private int x = 0, y = 0;
         public virtual void Draw()
@@ -57,6 +63,11 @@ namespace Laba2
     }
     class Ship:IComponent
     {
+        private readonly List<IComponent> _map = new List<IComponent>();
+        public void AddComponent(IComponent component)
+        {
+            _map.Add(component);
+        }
         public string Title { get; set; }
 
         private int x = 0, y = 0;

@@ -14,6 +14,7 @@ namespace Laba1
         {
             body = b;
             weapon = w;
+            Console.WriteLine("создался клон обьекта ");
         }
         public Minion(AbstractFactory factory)
         {

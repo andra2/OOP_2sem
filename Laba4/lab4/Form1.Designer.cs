@@ -244,7 +244,7 @@
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(40, 40);
             this.button19.TabIndex = 19;
-            this.button19.Text = ".";
+            this.button19.Text = ",";
             this.button19.UseVisualStyleBackColor = true;
             this.button19.Click += new System.EventHandler(this.dot);
             // 
@@ -287,7 +287,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Калькулятор";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Тригонометрический калькулятор";
             this.ResumeLayout(false);
             this.PerformLayout();
 

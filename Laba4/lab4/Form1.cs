@@ -20,7 +20,14 @@ namespace lab4
 
         private void sin(object sender, EventArgs e)
         {
-            textBox1.Text = $"{Math.Sin(Convert.ToDouble(textBox1.Text))}";
+            try
+            {
+                textBox1.Text = $"{Math.Sin(Convert.ToDouble(textBox1.Text))}";
+            }
+            catch (Exception)
+            {
+                textBox1.Text = "";
+            }
         }
 
         private void memory(object sender, EventArgs e)
@@ -102,22 +109,51 @@ namespace lab4
 
         private void cos(object sender, EventArgs e)
         {
-            textBox1.Text = $"{Math.Cos(Convert.ToDouble(textBox1.Text))}";
+            try
+            {
+                textBox1.Text = $"{Math.Cos(Convert.ToDouble(textBox1.Text))}";
+            }
+            catch (Exception)
+            {
+                textBox1.Text = "";
+            }
         }
 
         private void tan(object sender, EventArgs e)
         {
-            textBox1.Text = $"{Math.Tan(Convert.ToDouble(textBox1.Text))}";
+            try
+            {
+                textBox1.Text = $"{Math.Tan(Convert.ToDouble(textBox1.Text))}";
+            }
+            catch (Exception)
+            {
+                textBox1.Text = "";
+            }
         }
 
         private void cat(object sender, EventArgs e)
         {
-            textBox1.Text = $"{1.0/Math.Tan(Convert.ToDouble(textBox1.Text))}";
+            try
+            {
+                textBox1.Text = $"{1.0 / Math.Tan(Convert.ToDouble(textBox1.Text))}";
+            }
+            catch (Exception)
+            {
+                textBox1.Text = "";
+            }
         }
 
         private void equals(object sender, EventArgs e)
         {
-            textBox1.Text = calculator.Calculate().ToString();
+            //=
+            try
+            {
+                textBox1.Text = calculator.Calculate().ToString();
+            }
+            catch(Exception)
+            {
+                textBox1.Text = "";
+            }
         }
 
         private void clear(object sender, EventArgs e)
@@ -133,8 +169,8 @@ namespace lab4
 
         private void dot(object sender, EventArgs e)
         {
-            calculator.AddSymbol(".");
-            textBox1.Text += ".";
+            calculator.AddSymbol(",");
+            textBox1.Text += ",";
         }
 
         private void button20_Click(object sender, EventArgs e)

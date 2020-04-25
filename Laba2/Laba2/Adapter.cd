@@ -24,7 +24,7 @@
     <Lollipop Orientation="Right" Position="0.185" />
   </Class>
   <Class Name="Laba2.ShipToUnitAdapter" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="8" Y="2.5" Width="1.5" />
+    <Position X="8.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAAAAAEAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Class1.cs</FileName>
