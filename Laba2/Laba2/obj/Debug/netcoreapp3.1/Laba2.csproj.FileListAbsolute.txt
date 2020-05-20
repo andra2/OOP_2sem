@@ -22,3 +22,16 @@ D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\obj\Debug\ne
 D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\obj\Debug\netcoreapp3.1\Laba2.pdb
 D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\obj\Debug\netcoreapp3.1\Laba2.csproj.CoreCompileInputs.cache
 D:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\obj\Debug\netcoreapp3.1\Laba2.genruntimeconfig.cache
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\bin\Debug\netcoreapp3.1\Laba2.exe
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\bin\Debug\netcoreapp3.1\Laba2.deps.json
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\bin\Debug\netcoreapp3.1\Laba2.runtimeconfig.json
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\bin\Debug\netcoreapp3.1\Laba2.runtimeconfig.dev.json
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\bin\Debug\netcoreapp3.1\Laba2.dll
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\bin\Debug\netcoreapp3.1\Laba2.pdb
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\obj\Debug\netcoreapp3.1\Laba2.csprojAssemblyReference.cache
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\obj\Debug\netcoreapp3.1\Laba2.csproj.CoreCompileInputs.cache
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\obj\Debug\netcoreapp3.1\Laba2.AssemblyInfoInputs.cache
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\obj\Debug\netcoreapp3.1\Laba2.AssemblyInfo.cs
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\obj\Debug\netcoreapp3.1\Laba2.dll
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\obj\Debug\netcoreapp3.1\Laba2.pdb
+G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba2\Laba2\obj\Debug\netcoreapp3.1\Laba2.genruntimeconfig.cache

@@ -27,6 +27,8 @@ namespace Lab4
             {
                 UnitCollection.AddUnits(8);
             }
+            Generate.Enabled = false;
+            textBox1.Enabled = false;
             listBox1.DataSource = UnitCollection.units;
             listBox1.Refresh();
         }

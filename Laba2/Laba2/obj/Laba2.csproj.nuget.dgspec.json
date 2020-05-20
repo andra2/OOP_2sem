@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ИНСТИТУТ\\лабы\\2 курс\\ооп\\OOP_2sem\\Laba2\\Laba2\\Laba2.csproj": {}
+    "G:\\ИНСТИТУТ\\лабы\\2 курс\\ооп\\OOP_2sem\\Laba2\\Laba2\\Laba2.csproj": {}
   },
   "projects": {
-    "D:\\ИНСТИТУТ\\лабы\\2 курс\\ооп\\OOP_2sem\\Laba2\\Laba2\\Laba2.csproj": {
+    "G:\\ИНСТИТУТ\\лабы\\2 курс\\ооп\\OOP_2sem\\Laba2\\Laba2\\Laba2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ИНСТИТУТ\\лабы\\2 курс\\ооп\\OOP_2sem\\Laba2\\Laba2\\Laba2.csproj",
+        "projectUniqueName": "G:\\ИНСТИТУТ\\лабы\\2 курс\\ооп\\OOP_2sem\\Laba2\\Laba2\\Laba2.csproj",
         "projectName": "Laba2",
-        "projectPath": "D:\\ИНСТИТУТ\\лабы\\2 курс\\ооп\\OOP_2sem\\Laba2\\Laba2\\Laba2.csproj",
-        "packagesPath": "C:\\Users\\андрей\\.nuget\\packages\\",
-        "outputPath": "D:\\ИНСТИТУТ\\лабы\\2 курс\\ооп\\OOP_2sem\\Laba2\\Laba2\\obj\\",
+        "projectPath": "G:\\ИНСТИТУТ\\лабы\\2 курс\\ооп\\OOP_2sem\\Laba2\\Laba2\\Laba2.csproj",
+        "packagesPath": "C:\\Users\\Андрей\\.nuget\\packages\\",
+        "outputPath": "G:\\ИНСТИТУТ\\лабы\\2 курс\\ооп\\OOP_2sem\\Laba2\\Laba2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\андрей\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Андрей\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

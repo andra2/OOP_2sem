@@ -43,7 +43,7 @@ namespace Laba1
             {
                 army.AddLast(new Minion(factory));
             }
-
+            Console.WriteLine($"Создали {amount} войнов");
         }
         public void Construct(int amount, AbstractFactory bodyFactory, AbstractFactory weaponFactory)
         {
@@ -51,6 +51,7 @@ namespace Laba1
             {
                 army.AddLast(new Minion(bodyFactory, weaponFactory));
             }
+            Console.WriteLine($"Создали {amount} войнов");
         }
         public void ShowArmy()
         {
