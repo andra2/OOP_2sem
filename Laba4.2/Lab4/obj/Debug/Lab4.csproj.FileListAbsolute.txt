@@ -27,3 +27,12 @@ G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba4.2\Lab4\obj\Debug\L
 G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba4.2\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
 G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba4.2\Lab4\obj\Debug\Lab4.exe
 G:\ИНСТИТУТ\лабы\2 курс\ооп\OOP_2sem\Laba4.2\Lab4\obj\Debug\Lab4.pdb
+D:\ИНСТИТУТ\ООП\2020\Laba4.2\Lab4\bin\Debug\Lab4.exe.config
+D:\ИНСТИТУТ\ООП\2020\Laba4.2\Lab4\bin\Debug\Lab4.exe
+D:\ИНСТИТУТ\ООП\2020\Laba4.2\Lab4\bin\Debug\Lab4.pdb
+D:\ИНСТИТУТ\ООП\2020\Laba4.2\Lab4\obj\Debug\Lab4.csprojAssemblyReference.cache
+D:\ИНСТИТУТ\ООП\2020\Laba4.2\Lab4\obj\Debug\Lab4.Form1.resources
+D:\ИНСТИТУТ\ООП\2020\Laba4.2\Lab4\obj\Debug\Lab4.Properties.Resources.resources
+D:\ИНСТИТУТ\ООП\2020\Laba4.2\Lab4\obj\Debug\Lab4.csproj.GenerateResource.cache
+D:\ИНСТИТУТ\ООП\2020\Laba4.2\Lab4\obj\Debug\Lab4.exe
+D:\ИНСТИТУТ\ООП\2020\Laba4.2\Lab4\obj\Debug\Lab4.pdb
