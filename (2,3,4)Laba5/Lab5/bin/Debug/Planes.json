@@ -1,1 +1,153 @@
-[{"Crew":[{"Name":"12fcxexfwq","position":"wqefw","Age":0,"Experience":0},{"Name":"12fcxexfwq","position":"wqefw","Age":0,"Experience":0},{"Name":"12fcxexfwq","position":"wqefw","Age":0,"Experience":0},{"Name":"12fcxexfwq","position":"wqefw","Age":0,"Experience":0},{"Name":"12fcxexfwq","position":"wqefw","Age":0,"Experience":0},{"Name":"12fcxexfwq","position":"wqefw","Age":0,"Experience":0},{"Name":"12fcxexfwq","position":"wqefw","Age":0,"Experience":3}],"NofSeats":38,"DateOfIssue":"2021-02-18T08:29:07.4107022+03:00","carrying":"15 т.","creator":"Boeing","type":2,"Id":1},{"Crew":[],"NofSeats":2,"DateOfIssue":"2021-03-10T11:50:16.9125385+03:00","carrying":"15 т.","creator":"AIRBUS","type":0,"Id":2},{"Crew":[],"NofSeats":2,"DateOfIssue":"2021-03-10T11:50:16.9125385+03:00","carrying":"15 т.","creator":"AIRBUS","type":0,"Id":3},{"Crew":[],"NofSeats":2,"DateOfIssue":"2021-03-10T11:50:16.9125385+03:00","carrying":"15 т.","creator":"AIRBUS","type":0,"Id":4},{"Crew":[],"NofSeats":2,"DateOfIssue":"2021-03-10T11:50:16.9125385+03:00","carrying":"15 т.","creator":"AIRBUS","type":0,"Id":5},{"Crew":[],"NofSeats":2,"DateOfIssue":"2021-03-10T11:50:16.9125385+03:00","carrying":"15 т.","creator":"AIRBUS","type":0,"Id":6},{"Crew":[],"NofSeats":2,"DateOfIssue":"2021-03-10T11:50:16.9125385+03:00","carrying":"15 т.","creator":"AIRBUS","type":0,"Id":7},{"Crew":[],"NofSeats":2,"DateOfIssue":"2021-03-10T11:50:16.9125385+03:00","carrying":"15 т.","creator":"AIRBUS","type":0,"Id":8}]
+[
+  {
+    "Crew": [
+      {
+        "Name": "12fcxexfwq",
+        "position": "wqefw",
+        "Age": 0,
+        "Experience": 0
+      },
+      {
+        "Name": "12fcxexfwq",
+        "position": "wqefw",
+        "Age": 0,
+        "Experience": 0
+      },
+      {
+        "Name": "12fcxexfwq",
+        "position": "wqefw",
+        "Age": 0,
+        "Experience": 0
+      },
+      {
+        "Name": "12fcxexfwq",
+        "position": "wqefw",
+        "Age": 0,
+        "Experience": 0
+      },
+      {
+        "Name": "12fcxexfwq",
+        "position": "wqefw",
+        "Age": 0,
+        "Experience": 0
+      },
+      {
+        "Name": "12fcxexfwq",
+        "position": "wqefw",
+        "Age": 0,
+        "Experience": 0
+      },
+      {
+        "Name": "12fcxexfwq",
+        "position": "wqefw",
+        "Age": 0,
+        "Experience": 3
+      }
+    ],
+    "NofSeats": 38,
+    "DateOfIssue": "2021-02-18T08:29:07.4107022+03:00",
+    "carrying": "15 т.",
+    "creator": "Boeing",
+    "type": 2,
+    "Id": 1
+  },
+  {
+    "Crew": [],
+    "NofSeats": 2,
+    "DateOfIssue": "2021-03-10T11:50:16.9125385+03:00",
+    "carrying": "15 т.",
+    "creator": "AIRBUS",
+    "type": 0,
+    "Id": 2
+  },
+  {
+    "Crew": [],
+    "NofSeats": 21,
+    "DateOfIssue": "1999-05-19T00:00:00",
+    "carrying": "500 т.",
+    "creator": "AIRBUS",
+    "type": 1,
+    "Id": 4
+  },
+  {
+    "Crew": [],
+    "NofSeats": 2,
+    "DateOfIssue": "1999-04-08T00:00:00",
+    "carrying": "120 т.",
+    "creator": "AIRBUS",
+    "type": 2,
+    "Id": 5
+  },
+  {
+    "Crew": [],
+    "NofSeats": 18,
+    "DateOfIssue": "2006-07-18T00:00:00",
+    "carrying": "300 т.",
+    "creator": "AIRBUS",
+    "type": 1,
+    "Id": 12
+  },
+  {
+    "Crew": [],
+    "NofSeats": 18,
+    "DateOfIssue": "2006-07-18T00:00:00",
+    "carrying": "300 т.",
+    "creator": "Raytheon",
+    "type": 1,
+    "Id": 14
+  },
+  {
+    "Crew": [],
+    "NofSeats": 170,
+    "DateOfIssue": "2006-06-13T00:00:00",
+    "carrying": "300 т.",
+    "creator": "Boeing",
+    "type": 0,
+    "Id": 3
+  },
+  {
+    "Crew": [],
+    "NofSeats": 30,
+    "DateOfIssue": "2006-06-04T00:00:00",
+    "carrying": "180 т.",
+    "creator": "Boeing",
+    "type": 2,
+    "Id": 6
+  },
+  {
+    "Crew": [],
+    "NofSeats": 30,
+    "DateOfIssue": "2006-06-24T00:00:00",
+    "carrying": "180 т.",
+    "creator": "Boeing",
+    "type": 2,
+    "Id": 7
+  },
+  {
+    "Crew": [],
+    "NofSeats": 30,
+    "DateOfIssue": "2006-06-24T00:00:00",
+    "carrying": "180 т.",
+    "creator": "Raytheon",
+    "type": 2,
+    "Id": 8
+  },
+  {
+    "Crew": [],
+    "NofSeats": 2,
+    "DateOfIssue": "2007-04-14T00:00:00",
+    "carrying": "40 т.",
+    "creator": "Raytheon",
+    "type": 2,
+    "Id": 9
+  },
+  {
+    "Crew": [],
+    "NofSeats": 2,
+    "DateOfIssue": "2007-05-10T00:00:00",
+    "carrying": "40 т.",
+    "creator": "AIRBUS",
+    "type": 2,
+    "Id": 10
+  }
+]

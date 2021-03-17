@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using System.Windows.Forms;
 
 namespace Lab5
 {
@@ -51,6 +52,17 @@ namespace Lab5
             AIRBUS,
             Boeing,
             Raytheon
+        }
+
+        public void DrawToGrid(DataGridView dataGrid) //пишет объект в датагрид
+        {
+            dataGrid.Rows.Add(
+            this.Id.ToString(),
+            this.creator,
+            this.type.ToString(),
+            this.NofSeats.ToString(),
+            this.DateOfIssue.ToShortDateString(),
+            this.carrying.ToString());
         }
     }
 }

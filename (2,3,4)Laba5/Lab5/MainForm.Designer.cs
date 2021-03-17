@@ -30,13 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Id_Col = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TypeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SeatsCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CreatedCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CarryCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CrewCol = new System.Windows.Forms.DataGridViewButtonColumn();
             this.IdInput = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.ScrollBarLable = new System.Windows.Forms.TextBox();
@@ -64,6 +57,27 @@
             this.помощьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.DeleteButton = new System.Windows.Forms.Button();
+            this.Id_Col = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TypeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SeatsCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CreatedCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CarryCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CrewCol = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.idToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.типуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.производителюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.датеПроизводстваToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ascToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.descToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ascToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.descToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ascToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.descToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ascToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.descToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdErr)).BeginInit();
@@ -75,6 +89,7 @@
             // 
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -95,65 +110,6 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // Id_Col
-            // 
-            this.Id_Col.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Id_Col.HeaderText = "ID";
-            this.Id_Col.Name = "Id_Col";
-            this.Id_Col.ReadOnly = true;
-            this.Id_Col.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Id_Col.Width = 43;
-            // 
-            // TypeColumn
-            // 
-            this.TypeColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.TypeColumn.HeaderText = "Производитель";
-            this.TypeColumn.Name = "TypeColumn";
-            this.TypeColumn.ReadOnly = true;
-            this.TypeColumn.Width = 111;
-            // 
-            // type
-            // 
-            this.type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.type.HeaderText = "тип";
-            this.type.Name = "type";
-            this.type.ReadOnly = true;
-            this.type.Width = 49;
-            // 
-            // SeatsCol
-            // 
-            this.SeatsCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.SeatsCol.HeaderText = "Мест";
-            this.SeatsCol.Name = "SeatsCol";
-            this.SeatsCol.ReadOnly = true;
-            this.SeatsCol.Width = 58;
-            // 
-            // CreatedCol
-            // 
-            this.CreatedCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CreatedCol.HeaderText = "Произведен";
-            this.CreatedCol.Name = "CreatedCol";
-            this.CreatedCol.ReadOnly = true;
-            this.CreatedCol.Width = 94;
-            // 
-            // CarryCol
-            // 
-            this.CarryCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CarryCol.HeaderText = "Грузоподъемность";
-            this.CarryCol.Name = "CarryCol";
-            this.CarryCol.ReadOnly = true;
-            this.CarryCol.Width = 129;
-            // 
-            // CrewCol
-            // 
-            this.CrewCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CrewCol.HeaderText = "Экипаж";
-            this.CrewCol.Name = "CrewCol";
-            this.CrewCol.ReadOnly = true;
-            this.CrewCol.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.CrewCol.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.CrewCol.Width = 71;
             // 
             // IdInput
             // 
@@ -396,6 +352,11 @@
             // 
             // сортировкаПоToolStripMenuItem
             // 
+            this.сортировкаПоToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.idToolStripMenuItem,
+            this.типуToolStripMenuItem,
+            this.производителюToolStripMenuItem,
+            this.датеПроизводстваToolStripMenuItem});
             this.сортировкаПоToolStripMenuItem.Name = "сортировкаПоToolStripMenuItem";
             this.сортировкаПоToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
             this.сортировкаПоToolStripMenuItem.Text = "Сортировка по";
@@ -422,11 +383,186 @@
             this.statusStrip1.TabIndex = 26;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Location = new System.Drawing.Point(297, 432);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(123, 30);
+            this.DeleteButton.TabIndex = 27;
+            this.DeleteButton.Text = "Удалить самолет";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
+            // Id_Col
+            // 
+            this.Id_Col.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Id_Col.HeaderText = "ID";
+            this.Id_Col.Name = "Id_Col";
+            this.Id_Col.ReadOnly = true;
+            this.Id_Col.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Id_Col.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.Id_Col.Width = 43;
+            // 
+            // TypeColumn
+            // 
+            this.TypeColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.TypeColumn.HeaderText = "Производитель";
+            this.TypeColumn.Name = "TypeColumn";
+            this.TypeColumn.ReadOnly = true;
+            this.TypeColumn.Width = 111;
+            // 
+            // type
+            // 
+            this.type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.type.HeaderText = "тип";
+            this.type.Name = "type";
+            this.type.ReadOnly = true;
+            this.type.Width = 49;
+            // 
+            // SeatsCol
+            // 
+            this.SeatsCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.SeatsCol.HeaderText = "Мест";
+            this.SeatsCol.Name = "SeatsCol";
+            this.SeatsCol.ReadOnly = true;
+            this.SeatsCol.Width = 58;
+            // 
+            // CreatedCol
+            // 
+            this.CreatedCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CreatedCol.HeaderText = "Произведен";
+            this.CreatedCol.Name = "CreatedCol";
+            this.CreatedCol.ReadOnly = true;
+            this.CreatedCol.Width = 94;
+            // 
+            // CarryCol
+            // 
+            this.CarryCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CarryCol.HeaderText = "Грузоподъемность";
+            this.CarryCol.Name = "CarryCol";
+            this.CarryCol.ReadOnly = true;
+            this.CarryCol.Width = 129;
+            // 
+            // CrewCol
+            // 
+            this.CrewCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CrewCol.HeaderText = "Экипаж";
+            this.CrewCol.Name = "CrewCol";
+            this.CrewCol.ReadOnly = true;
+            this.CrewCol.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.CrewCol.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.CrewCol.Width = 71;
+            // 
+            // idToolStripMenuItem
+            // 
+            this.idToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ascToolStripMenuItem,
+            this.descToolStripMenuItem});
+            this.idToolStripMenuItem.Name = "idToolStripMenuItem";
+            this.idToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.idToolStripMenuItem.Text = "Id";
+            this.idToolStripMenuItem.Click += new System.EventHandler(this.idToolStripMenuItem_Click);
+            // 
+            // типуToolStripMenuItem
+            // 
+            this.типуToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ascToolStripMenuItem1,
+            this.descToolStripMenuItem1});
+            this.типуToolStripMenuItem.Name = "типуToolStripMenuItem";
+            this.типуToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.типуToolStripMenuItem.Text = "Типу";
+            // 
+            // производителюToolStripMenuItem
+            // 
+            this.производителюToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ascToolStripMenuItem2,
+            this.descToolStripMenuItem2});
+            this.производителюToolStripMenuItem.Name = "производителюToolStripMenuItem";
+            this.производителюToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.производителюToolStripMenuItem.Text = "Производителю";
+            // 
+            // датеПроизводстваToolStripMenuItem
+            // 
+            this.датеПроизводстваToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ascToolStripMenuItem3,
+            this.descToolStripMenuItem3});
+            this.датеПроизводстваToolStripMenuItem.Name = "датеПроизводстваToolStripMenuItem";
+            this.датеПроизводстваToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.датеПроизводстваToolStripMenuItem.Text = "Дате производства";
+            // 
+            // ascToolStripMenuItem
+            // 
+            this.ascToolStripMenuItem.Name = "ascToolStripMenuItem";
+            this.ascToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ascToolStripMenuItem.Text = "Asc";
+            this.ascToolStripMenuItem.Click += new System.EventHandler(this.ascToolStripMenuItem_Click);
+            // 
+            // descToolStripMenuItem
+            // 
+            this.descToolStripMenuItem.Name = "descToolStripMenuItem";
+            this.descToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.descToolStripMenuItem.Text = "Desc";
+            this.descToolStripMenuItem.Click += new System.EventHandler(this.descToolStripMenuItem_Click);
+            // 
+            // ascToolStripMenuItem1
+            // 
+            this.ascToolStripMenuItem1.Name = "ascToolStripMenuItem1";
+            this.ascToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ascToolStripMenuItem1.Text = "Asc";
+            this.ascToolStripMenuItem1.Click += new System.EventHandler(this.ascToolStripMenuItem1_Click);
+            // 
+            // descToolStripMenuItem1
+            // 
+            this.descToolStripMenuItem1.Name = "descToolStripMenuItem1";
+            this.descToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.descToolStripMenuItem1.Text = "Desc";
+            this.descToolStripMenuItem1.Click += new System.EventHandler(this.descToolStripMenuItem1_Click);
+            // 
+            // ascToolStripMenuItem2
+            // 
+            this.ascToolStripMenuItem2.Name = "ascToolStripMenuItem2";
+            this.ascToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.ascToolStripMenuItem2.Text = "Asc";
+            this.ascToolStripMenuItem2.Click += new System.EventHandler(this.ascToolStripMenuItem2_Click);
+            // 
+            // descToolStripMenuItem2
+            // 
+            this.descToolStripMenuItem2.Name = "descToolStripMenuItem2";
+            this.descToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.descToolStripMenuItem2.Text = "Desc";
+            this.descToolStripMenuItem2.Click += new System.EventHandler(this.descToolStripMenuItem2_Click);
+            // 
+            // ascToolStripMenuItem3
+            // 
+            this.ascToolStripMenuItem3.Name = "ascToolStripMenuItem3";
+            this.ascToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.ascToolStripMenuItem3.Text = "Asc";
+            this.ascToolStripMenuItem3.Click += new System.EventHandler(this.ascToolStripMenuItem3_Click);
+            // 
+            // descToolStripMenuItem3
+            // 
+            this.descToolStripMenuItem3.Name = "descToolStripMenuItem3";
+            this.descToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.descToolStripMenuItem3.Text = "Desc";
+            this.descToolStripMenuItem3.Click += new System.EventHandler(this.descToolStripMenuItem3_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(731, 468);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 30);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Очистить";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Airport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 549);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -485,13 +621,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox CarryingBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id_Col;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TypeColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SeatsCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CreatedCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CarryCol;
-        private System.Windows.Forms.DataGridViewButtonColumn CrewCol;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сохранитьToolStripMenuItem;
@@ -500,6 +629,27 @@
         private System.Windows.Forms.ToolStripMenuItem помощьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id_Col;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TypeColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SeatsCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CreatedCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CarryCol;
+        private System.Windows.Forms.DataGridViewButtonColumn CrewCol;
+        private System.Windows.Forms.ToolStripMenuItem idToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem типуToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem производителюToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem датеПроизводстваToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ascToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem descToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ascToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem descToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ascToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem descToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem ascToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem descToolStripMenuItem3;
+        private System.Windows.Forms.Button button1;
     }
 }
 
