@@ -149,5 +149,23 @@
     "creator": "AIRBUS",
     "type": 2,
     "Id": 10
+  },
+  {
+    "Crew": [],
+    "NofSeats": 15,
+    "DateOfIssue": "2021-03-01T00:00:00",
+    "carrying": "49845 т.",
+    "creator": "Raytheon",
+    "type": 1,
+    "Id": 11
+  },
+  {
+    "Crew": [],
+    "NofSeats": 15,
+    "DateOfIssue": "2009-07-18T00:00:00",
+    "carrying": "220 т.",
+    "creator": "Boeing",
+    "type": 0,
+    "Id": 13
   }
 ]

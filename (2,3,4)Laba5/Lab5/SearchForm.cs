@@ -86,10 +86,13 @@ namespace Lab5
             searchDataGrid.Rows.Clear();
             IEnumerable<Plane> result = SearchText(creatorBox.Text);
             result = result.Intersect(SearchType(typeBox.Text));
-
+            if (CapacTo.Value==0)
+            {
+                CapacTo.Value = decimal.MaxValue;
+            }
             result = from t in result
-                     where t.NofSeats > CapacFrom.Value && t.NofSeats < CapacTo.Value
-                     where int.Parse(t.carrying.Replace(" т.","")) > CarryFrom.Value && int.Parse(t.carrying.Replace(" т.", "")) < CarryTo.Value
+                     where t.NofSeats >= CapacFrom.Value && t.NofSeats <= CapacTo.Value
+                     where int.Parse(t.carrying.Replace(" т.","")) >= CarryFrom.Value && int.Parse(t.carrying.Replace(" т.", "")) <= CarryTo.Value
                      select t;
             DrawAll(result);
         }

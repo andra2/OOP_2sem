@@ -335,9 +335,23 @@ namespace Lab5
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            lastChangeLabel.Text = "удаление всего";
             File.WriteAllText("Planes.json", JsonConvert.SerializeObject(Planes, Formatting.Indented));
             Planes = new LinkedList<Plane>();
             dataGridView1.Rows.Clear();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            menuStrip1.Visible = !menuStrip1.Visible;
+            if (ShowButton.Text == "скрыть")
+            {
+                ShowButton.Text = "показать";
+            }
+            else
+            {
+                ShowButton.Text = "скрыть";
+            }
         }
     }
 }
