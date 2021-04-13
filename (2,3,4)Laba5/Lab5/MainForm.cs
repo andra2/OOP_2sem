@@ -22,9 +22,14 @@ namespace Lab5
         Timer timer;
         protected internal LinkedList<Plane> Planes = new LinkedList<Plane>();
         Plane CurrForm = new Plane();
+        Director dir = new Director();
+        ConcreteBuilder flyBuilder;
         public Airport()
         {
             InitializeComponent();
+
+            flyBuilder = new ConcreteBuilder(this);
+            dir.Builder = flyBuilder;
 
             infoLabel = new ToolStripLabel();
             infoLabel.Text = "Текущие дата и время:";
@@ -93,21 +98,15 @@ namespace Lab5
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CurrForm.creator = comboBox1.SelectedItem.ToString();
+            CurrForm.creator = creatorBox.SelectedItem.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             lastChangeLabel.Text = "Добавление самолета";
-            Plane i = new Plane
-            {
-                Id = CurrForm.Id,
-                creator = CurrForm.creator,
-                type = CurrForm.type,
-                NofSeats = CurrForm.NofSeats,
-                DateOfIssue = CurrForm.DateOfIssue,
-                carrying = CurrForm.carrying
-            };
+            dir.BuildFullFeaturedPlane((int)IdBox.Value, creatorBox.SelectedItem.ToString(), CurrForm.type, trackBar1.Value, Calendar.SelectionStart, CarryingBox.Text );
+            Plane i = flyBuilder.GetPlane();
+
             var results = new List<ValidationResult>();
             var context = new ValidationContext(i);
             if (Validator.TryValidateObject(i, context, results, false))
