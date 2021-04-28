@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 namespace Lab5
 {
     public interface IBuilder
@@ -14,10 +10,6 @@ namespace Lab5
         void BuildDate(DateTime date);
         void BuildCarry(string carr);
     }
-    class Builder
-    {
-
-    }
 
     public class Director
     {
@@ -27,12 +19,8 @@ namespace Lab5
         {
             set { _builder = value; }
         }
-        //public void BuildMinimalViableProduct()
-        //{
-        //    this._builder.BuildId(0);
-        //}
 
-        public void BuildFullFeaturedPlane(int id,string creator,Plane.Type type,int seats,DateTime date,string carry)
+        public void BuildFullFeaturedPlane(int id, string creator, Plane.Type type, int seats, DateTime date, string carry)
         {
             this._builder.BuildId(id);
             this._builder.BuildCreator(creator);
@@ -59,12 +47,29 @@ namespace Lab5
 
         public void BuildId(int id)
         {
-            foreach(Plane p in main.Planes)
+            foreach (Plane p in main.Planes)
             {
-                if (p.Id == id)
+                if (id == p.Id)
                 {
-                    id = 0;
-
+                    id++;
+                    while (true)
+                    {
+                        bool check = true;
+                        foreach (Plane pl in main.Planes)
+                        {
+                            if (id == pl.Id)
+                            {
+                                check = false;
+                                break;
+                            }
+                        }
+                        if (check)
+                        {
+                            this._plane.Id = id;
+                            return;
+                        }
+                        id++;
+                    }
                 }
             }
             this._plane.Id = id;
@@ -80,7 +85,7 @@ namespace Lab5
             this._plane.type = type;
         }
 
-        public void BuildSeats(int no) 
+        public void BuildSeats(int no)
         {
             this._plane.NofSeats = no;
         }

@@ -1,15 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.IO;
-using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
+using System.Data;
+using System.IO;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace Lab5
 {
@@ -28,6 +24,9 @@ namespace Lab5
         {
             InitializeComponent();
 
+
+            //Singleton.getInstance(System.Drawing.Color.FromName("Window"));
+            this.BackColor = Singleton.getInstance(System.Drawing.Color.FromName("Window")).BackColor;
             flyBuilder = new ConcreteBuilder(this);
             dir.Builder = flyBuilder;
 
@@ -44,6 +43,8 @@ namespace Lab5
             timer = new Timer() { Interval = 1000 };
             timer.Tick += timer_Tick;
             timer.Start();
+
+            creatorBox.SelectedIndex = 0;
         }
 
         void timer_Tick(object sender, EventArgs e)
@@ -104,7 +105,12 @@ namespace Lab5
         private void button1_Click(object sender, EventArgs e)
         {
             lastChangeLabel.Text = "Добавление самолета";
-            dir.BuildFullFeaturedPlane((int)IdBox.Value, creatorBox.SelectedItem.ToString(), CurrForm.type, trackBar1.Value, Calendar.SelectionStart, CarryingBox.Text );
+            dir.BuildFullFeaturedPlane((int)IdBox.Value,
+                                        creatorBox.SelectedItem.ToString(),
+                                        CurrForm.type,
+                                        trackBar1.Value,
+                                        Calendar.SelectionStart,
+                                        CarryingBox.Text);
             Plane i = flyBuilder.GetPlane();
 
             var results = new List<ValidationResult>();
@@ -131,7 +137,7 @@ namespace Lab5
         private void JsonSave_Click(object sender, EventArgs e)
         {
             lastChangeLabel.Text = "Сохранение в память";
-            File.WriteAllText("Planes.json", JsonConvert.SerializeObject(Planes,Formatting.Indented));
+            File.WriteAllText("Planes.json", JsonConvert.SerializeObject(Planes, Formatting.Indented));
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -161,6 +167,7 @@ namespace Lab5
                     i.DrawToGrid(dataGridView1);
                 }
             }
+            ascToolStripMenuItem_Click(sender, e);
         }
 
         private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
@@ -173,18 +180,18 @@ namespace Lab5
         private void CarryingBox_TextChanged(object sender, EventArgs e)
         {
             double result;
-            double.TryParse(CarryingBox.Text,out result);
+            double.TryParse(CarryingBox.Text, out result);
             CurrForm.carrying = result.ToString() + " т.";
         }
 
         private void CarryingBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             {
-               if (e.KeyChar != 8 && (e.KeyChar < 48 || e.KeyChar > 57))
+                if (e.KeyChar != 8 && (e.KeyChar < 48 || e.KeyChar > 57))
                     e.Handled = true;
             }
 
-            
+
         }
 
         private void помощьToolStripMenuItem_Click(object sender, EventArgs e)
@@ -206,10 +213,10 @@ namespace Lab5
             lastChangeLabel.Text = "Удаление  самолета";
 
             int index = dataGridView1.CurrentRow.Index;
-            if (index != dataGridView1.RowCount - 1 && index!=-1)
+            if (index != dataGridView1.RowCount - 1 && index != -1)
             {
                 int id = int.Parse(dataGridView1[0, index].Value.ToString());
-                foreach(Plane i in Planes)
+                foreach (Plane i in Planes)
                 {
                     if (i.Id == id)
                     {
@@ -219,7 +226,7 @@ namespace Lab5
                     }
 
                 }
-                
+
             }
         }
 
@@ -235,7 +242,7 @@ namespace Lab5
             IEnumerable<Plane> result = from t in Planes
                                         orderby t.Id ascending
                                         select t;
-            foreach(Plane pl in result)
+            foreach (Plane pl in result)
             {
                 pl.DrawToGrid(dataGridView1);
             }
@@ -335,7 +342,7 @@ namespace Lab5
         private void button1_Click_1(object sender, EventArgs e)
         {
             lastChangeLabel.Text = "удаление всего";
-            File.WriteAllText("Planes.json", JsonConvert.SerializeObject(Planes, Formatting.Indented));
+            //File.WriteAllText("Planes.json", JsonConvert.SerializeObject(Planes, Formatting.Indented));
             Planes = new LinkedList<Plane>();
             dataGridView1.Rows.Clear();
         }
@@ -350,6 +357,29 @@ namespace Lab5
             else
             {
                 ShowButton.Text = "скрыть";
+            }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            lastChangeLabel.Text = "Копирование  самолета";
+
+            int index = dataGridView1.CurrentRow.Index;
+            if (index != dataGridView1.RowCount - 1 && index != -1)
+            {
+                int id = int.Parse(dataGridView1[0, index].Value.ToString());
+                foreach (Plane i in Planes)
+                {
+                    if (i.Id == id)
+                    {
+                        Plane newCopy = i.Copy();
+                        Planes.AddLast(newCopy);
+                        newCopy.DrawToGrid(dataGridView1);
+                        return;
+                    }
+
+                }
+
             }
         }
     }

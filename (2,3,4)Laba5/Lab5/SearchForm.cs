@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Lab5
@@ -20,7 +16,7 @@ namespace Lab5
         Airport Main;
         private void DrawAll(IEnumerable<Plane> list)
         {
-            foreach(Plane i in list)
+            foreach (Plane i in list)
             {
                 i.DrawToGrid(searchDataGrid);
             }
@@ -32,7 +28,7 @@ namespace Lab5
                 i.DrawToGrid(searchDataGrid);
             }
         }
-        protected internal SearchForm(Airport m): this()
+        protected internal SearchForm(Airport m) : this()
         {
             Main = m;
             DrawAll(Main.Planes);
@@ -56,9 +52,9 @@ namespace Lab5
             Regex regex = new Regex(pattern, RegexOptions.IgnoreCase);
 
             IEnumerable<Plane> result = from t in Main.Planes
-                         where regex.Match(t.creator).Success
-                         orderby t.Id
-                         select t;
+                                        where regex.Match(t.creator).Success
+                                        orderby t.Id
+                                        select t;
             return result;
         }
         private IEnumerable<Plane> SearchType(string text)
@@ -86,13 +82,13 @@ namespace Lab5
             searchDataGrid.Rows.Clear();
             IEnumerable<Plane> result = SearchText(creatorBox.Text);
             result = result.Intersect(SearchType(typeBox.Text));
-            if (CapacTo.Value==0)
+            if (CapacTo.Value == 0)
             {
                 CapacTo.Value = decimal.MaxValue;
             }
             result = from t in result
                      where t.NofSeats >= CapacFrom.Value && t.NofSeats <= CapacTo.Value
-                     where int.Parse(t.carrying.Replace(" т.","")) >= CarryFrom.Value && int.Parse(t.carrying.Replace(" т.", "")) <= CarryTo.Value
+                     where int.Parse(t.carrying.Replace(" т.", "")) >= CarryFrom.Value && int.Parse(t.carrying.Replace(" т.", "")) <= CarryTo.Value
                      select t;
             DrawAll(result);
         }

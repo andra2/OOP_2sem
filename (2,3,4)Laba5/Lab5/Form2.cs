@@ -84,7 +84,7 @@ namespace Lab5
             if (Validator.TryValidateObject(i, context, results, true))
             {
                 CrewAdd(i);
-                plane.Crew.AddLast(i);
+                plane.Crew.Add(i);
             }
         }
 

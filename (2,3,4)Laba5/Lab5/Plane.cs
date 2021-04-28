@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.Windows.Forms;
 
 namespace Lab5
 {
     public class Plane
-    { 
-        public LinkedList<CrewMember> Crew;
+    {
+        public List<CrewMember> Crew;
 
         [Required(ErrorMessage = "Не задано количество мест")]
         [Range(0, 300, ErrorMessage = "Недопустимое количество мест")]
@@ -31,13 +28,7 @@ namespace Lab5
         public int Id { get; set; }
         public Plane()
         {
-            type = Type.passenger;
-            Id = 1;
-            DateOfIssue = DateTime.Now;
-            creator = "AIRBUS";
-            carrying = "15 т.";
-            Crew = new LinkedList<CrewMember>();
-            NofSeats = 2;
+            Crew = new List<CrewMember>();
         }
         public enum Type
         {
@@ -63,6 +54,25 @@ namespace Lab5
             this.NofSeats.ToString(),
             this.DateOfIssue.ToShortDateString(),
             this.carrying.ToString());
+        }
+
+        public Plane Copy()
+        {
+            Plane copy = (Plane)MemberwiseClone();
+
+            copy.Id = this.Id;
+            copy.Id++;
+            copy.NofSeats = this.NofSeats;
+            copy.type = this.type;
+            copy.DateOfIssue = this.DateOfIssue;
+            copy.creator = creator;
+            copy.carrying = this.carrying;
+            copy.Crew = new List<CrewMember>();
+            foreach (CrewMember i in this.Crew)
+            {
+                Crew.Add(i);
+            }
+            return copy;
         }
     }
 }
