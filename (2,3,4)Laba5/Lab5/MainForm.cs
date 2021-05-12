@@ -67,10 +67,16 @@ namespace Lab5
         {
             if (e.RowIndex != -1 && e.ColumnIndex == 6 && dataGridView1[0, 0].Value != null)
             {
-                Form2 newForm = new Form2(FindPlane(e), this);
-                newForm.Show();
-                this.Enabled = false;
-
+                if (dataGridView1[7, e.RowIndex].Value.ToString() != "Летит")
+                {
+                    Form2 newForm = new Form2(FindPlane(e), this);
+                    newForm.Show();
+                    this.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Самолет летит - менять экипаж нельзя", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -373,14 +379,68 @@ namespace Lab5
                     if (i.Id == id)
                     {
                         Plane newCopy = i.Copy();
+                        newCopy.Id = CheckId(newCopy.Id);
                         Planes.AddLast(newCopy);
                         newCopy.DrawToGrid(dataGridView1);
                         return;
                     }
-
                 }
-
             }
+        }
+
+        private void button2_Click_2(object sender, EventArgs e)
+        {
+            lastChangeLabel.Text = "Изменение статуса самолета";
+
+            int index = dataGridView1.CurrentRow.Index;
+            if (index != dataGridView1.RowCount - 1 && index != -1)
+            {
+                int id = int.Parse(dataGridView1[0, index].Value.ToString());
+                foreach (Plane i in Planes)
+                {
+                    if (i.Id == id)
+                    {
+                        if (i.State == PlaneState.OnTheGrnd)
+                        {
+                            i.State = PlaneState.Flies;
+                            dataGridView1[7, index].Value = "Летит";
+                            return;
+                        }
+                        i.State = PlaneState.OnTheGrnd;
+                        dataGridView1[7, index].Value = "На земле";
+                        return;
+                    }
+                }
+            }
+        }
+
+        public int CheckId(int id)
+        {
+            foreach (Plane p in Planes)
+            {
+                if (id == p.Id)
+                {
+                    id++;
+                    while (true)
+                    {
+                        bool check = true;
+                        foreach (Plane pl in Planes)
+                        {
+                            if (id == pl.Id)
+                            {
+                                check = false;
+                                break;
+                            }
+                        }
+                        if (check)
+                        {
+                            return id;
+                        }
+                        id++;
+                    }
+                }
+            }
+            return id;
         }
     }
 }

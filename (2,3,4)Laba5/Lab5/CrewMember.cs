@@ -1,28 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Lab5
 {
-    public class CrewMember
+
+    interface IAirportCrew
+    {
+        string Name{ get; set; }
+        int Age { get; set; }
+    }
+    public abstract class CrewMember : IAirportCrew
     {
         [Required(ErrorMessage = "Не заданы ФИО", AllowEmptyStrings = false)]
         [StringLength(70, MinimumLength = 1, ErrorMessage = "Слишком короткое ФИО")]
-        public string Name;
+        public string Name { get; set; }
 
         [Required(ErrorMessage = "Отсутствует должность", AllowEmptyStrings = false)]
         [StringLength(70, MinimumLength = 1, ErrorMessage = "Слишком короткая должность")]
-        public string position;
+        public string Position { get; set; }
 
         [Required(ErrorMessage = "Возраст не задан")]
         [Range(18, 100, ErrorMessage = "Возраст должен быть от 18 до 100")]
-        public int Age;
+        public int Age { get; set; }
 
         [Required(ErrorMessage = "Опыт работы не задан")]
         [Range(0, 100, ErrorMessage = "Опыт работы должен быть от 0 до 80")]
-        public int Experience;
+        public int Experience { get; set; }
     }
 }

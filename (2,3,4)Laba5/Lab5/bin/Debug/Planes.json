@@ -1,101 +1,52 @@
 [
   {
     "Crew": [],
-    "NofSeats": 20,
-    "DateOfIssue": "2019-01-02T00:00:00",
-    "carrying": "30",
-    "creator": "Boeing",
-    "type": 1,
-    "Id": 1
-  },
-  {
-    "Crew": [],
+    "State": 1,
     "NofSeats": 2,
-    "DateOfIssue": "2019-01-03T00:00:00",
-    "carrying": "45",
-    "creator": "Boeing",
-    "type": 2,
-    "Id": 2
-  },
-  {
-    "Crew": [],
-    "NofSeats": 2,
-    "DateOfIssue": "2019-01-03T00:00:00",
-    "carrying": "45",
-    "creator": "Raytheon",
-    "type": 2,
-    "Id": 3
-  },
-  {
-    "Crew": [],
-    "NofSeats": 2,
-    "DateOfIssue": "2019-01-13T00:00:00",
-    "carrying": "90",
+    "DateOfIssue": "2021-05-13T00:00:00+03:00",
+    "carrying": "15",
     "creator": "AIRBUS",
-    "type": 1,
-    "Id": 5
+    "Id": 1,
+    "type": 0
   },
   {
     "Crew": [],
+    "State": 0,
     "NofSeats": 2,
-    "DateOfIssue": "2018-06-21T00:00:00",
-    "carrying": "120",
+    "DateOfIssue": "2021-05-13T00:00:00+03:00",
+    "carrying": "15",
     "creator": "AIRBUS",
-    "type": 1,
-    "Id": 7
+    "Id": 2,
+    "type": 0
   },
   {
     "Crew": [],
-    "NofSeats": 136,
-    "DateOfIssue": "2018-06-21T00:00:00",
-    "carrying": "80",
-    "creator": "AIRBUS",
-    "type": 0,
-    "Id": 10
-  },
-  {
-    "Crew": [],
+    "State": 1,
     "NofSeats": 2,
-    "DateOfIssue": "2019-01-03T00:00:00",
-    "carrying": "45",
-    "creator": "Raytheon",
-    "type": 2,
-    "Id": 4
+    "DateOfIssue": "2021-05-13T00:00:00+03:00",
+    "carrying": "15",
+    "creator": "AIRBUS",
+    "Id": 3,
+    "type": 0
   },
   {
     "Crew": [],
+    "State": 0,
     "NofSeats": 2,
-    "DateOfIssue": "2019-01-13T00:00:00",
-    "carrying": "90",
+    "DateOfIssue": "2021-05-13T00:00:00+03:00",
+    "carrying": "15",
     "creator": "AIRBUS",
-    "type": 1,
-    "Id": 6
+    "Id": 4,
+    "type": 0
   },
   {
     "Crew": [],
+    "State": 1,
     "NofSeats": 2,
-    "DateOfIssue": "2018-06-21T00:00:00",
-    "carrying": "120",
+    "DateOfIssue": "2021-05-13T00:00:00+03:00",
+    "carrying": "15",
     "creator": "AIRBUS",
-    "type": 1,
-    "Id": 8
-  },
-  {
-    "Crew": [],
-    "NofSeats": 136,
-    "DateOfIssue": "2018-06-21T00:00:00",
-    "carrying": "80",
-    "creator": "AIRBUS",
-    "type": 0,
-    "Id": 11
-  },
-  {
-    "Crew": [],
-    "NofSeats": 2,
-    "DateOfIssue": "2018-06-21T00:00:00",
-    "carrying": "120",
-    "creator": "AIRBUS",
-    "type": 1,
-    "Id": 9
+    "Id": 5,
+    "type": 0
   }
 ]

@@ -1,37 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.ComponentModel.DataAnnotations;
+using System.Windows.Forms;
 
 namespace Lab5
 {
     public partial class Form2 : Form
     {
-        CrewMember member=new CrewMember();
+        CrewMember member = new Client(new StewardFactory()).GetMember();
         Plane plane;
         Form Main;
         public Form2()
         {
             InitializeComponent();
         }
-        public Form2( Plane a,Form parent)
+        public Form2(Plane a, Form parent)
         {
             InitializeComponent();
             plane = a;
             Main = parent;
         }
         public void CrewAdd(CrewMember i)
-        { 
+        {
             TreeNode node = new TreeNode(i.Name);
             node.Nodes.Add("Возраст: " + i.Age.ToString());
             node.Nodes.Add("Опыт работы: " + i.Experience.ToString());
-            node.Nodes.Add("Должность: " + i.position.ToString());
+            node.Nodes.Add("Должность: " + i.Position.ToString());
             CrewTree.Nodes.Add(node);
 
         }
@@ -44,7 +38,7 @@ namespace Lab5
             CarryBox.Text = plane.carrying;
             NoSeats.Text = plane.NofSeats.ToString();
 
-            foreach(CrewMember i in plane.Crew)
+            foreach (CrewMember i in plane.Crew)
             {
                 CrewAdd(i);
             }
@@ -57,7 +51,7 @@ namespace Lab5
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            member.position = textBox2.Text;
+            member.Position = textBox2.Text;
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -72,19 +66,17 @@ namespace Lab5
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            CrewMember i = new CrewMember
-            {
-                Name = member.Name,
-                Age = member.Age,
-                Experience = member.Experience,
-                position = member.position
-            };
+            member.Age = (int)AgeBox.Value;
+            member.Experience = (int)ExpBox.Value;
+            member.Position = textBox2.Text;
+            member.Name = textBox1.Text;
             var results = new List<ValidationResult>();
-            var context = new ValidationContext(i);
-            if (Validator.TryValidateObject(i, context, results, true))
+            var context = new ValidationContext(member);
+            if (Validator.TryValidateObject(member, context, results, true))
             {
-                CrewAdd(i);
-                plane.Crew.Add(i);
+                CrewAdd(member);
+                plane.Crew.Add(member);
+                member = new Client(new StewardFactory()).GetMember();
             }
         }
 
@@ -95,13 +87,13 @@ namespace Lab5
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            if (plane.Crew.Count!=0)
+            if (plane.Crew.Count != 0)
             {
                 if (CrewTree.SelectedNode.Level == 0)
                 {
-                    foreach(CrewMember i in plane.Crew)
+                    foreach (CrewMember i in plane.Crew)
                     {
-                        if (i.Name==CrewTree.SelectedNode.Text)
+                        if (i.Name == CrewTree.SelectedNode.Text)
                         {
                             plane.Crew.Remove(i);
                             CrewTree.SelectedNode.Remove();
@@ -111,7 +103,7 @@ namespace Lab5
                     return;
                 }
 
-                if(CrewTree.SelectedNode.Level == 1)
+                if (CrewTree.SelectedNode.Level == 1)
                 {
                     foreach (CrewMember i in plane.Crew)
                     {
@@ -130,6 +122,14 @@ namespace Lab5
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
             Main.Enabled = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Adapter adapter = new Adapter();
+
+            CrewAdd(adapter);
+            plane.Crew.Add(adapter);
         }
     }
 }
